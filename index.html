@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="player">
+        <div class="volume-slider">
+            <div class="volume-icon">
+                <span class="material-icons">volume_up</span>
+            </div>
+            <div class="range-vslider">
+                <input type="range" min="0" max="100" value="50" class="vslider">
+                <div class="vprogress-bar"></div>
+                <div id="vprogress"></div>
+            </div>
+        </div>
+        <img src="" class="cover" alt="cover">
+        <div class="details">
+            <h1 class="track-title"></h1>
+            <span class="artist-name"></span>
+        </div>
+        <div class="timeline-slider">
+            <div class="timeline">
+                <small class="time"></small>
+                <small class="fulltime"></small>
+            </div>
+            <div class="range-slider">
+                <input type="range" min="0" max="100" value="0" class="slider">
+                <div class="progress-bar"></div>
+                <div id="progress"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <span id="btnRepeat" class="material-icons">repeat</span>
+            <span id="btnPrev" class="material-icons">skip_previous</span>
+            <div class="play-pause">
+                <span id="mainPlayBtn" class="material-icons">play_arrow</span>
+            </div>
+            <span id="btnNext" class="material-icons">skip_next</span>
+            <span id="btnFav" class="material-icons"></span>
+        </div>
+    </div>
+
+    <audio id="audio" src=""></audio>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
